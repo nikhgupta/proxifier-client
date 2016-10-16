@@ -2,6 +2,8 @@
 
 [[ -f "bower.json" ]] || bower init
 bower install --save jquery bootstrap riot exim browser-request
+npm install --save riot # for riot command line
+
 mkdir -p source/icons source/fonts source/images source/stylesheets
 
 cp -rf bower_components/font-awesome/fonts/* source/fonts

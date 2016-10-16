@@ -7,6 +7,12 @@ ignore "vendor/*"
 activate :sprockets
 sprockets.append_path File.join("#{root}", "bower_components")
 
+activate :external_pipeline,
+  name: :riot,
+  command: "./node_modules/.bin/riot #{"--watch" unless build?} --whitespace --type coffeescript --style scss --ext html source/templates source/javascripts/templates.js",
+  source: "source/javascripts",
+  latency: 2
+
 configure :development do
   activate :livereload
 end
