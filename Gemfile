@@ -12,3 +12,12 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-sprockets', '~> 4.0.0.rc.1'
+
+# middleman detects 'less' files in source/pages-framework, and hence,
+# asks us to require these gems - there must be a way to ignore those files, but
+# for now, the following gems handle this issue.
+#
+# Moreover, the following did not work inside config.rb:
+#   ignore 'pages-framework/*'
+gem 'less'
+gem 'therubyracer'

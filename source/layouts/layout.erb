@@ -35,7 +35,10 @@
       <div class="page-content-wrapper">
 
         <div class="content">
-          <%= yield %>
+          <%= partial "layouts/breadcrumb" %>
+          <div class="container-fluid container-fixed-lg">
+            <%= yield %>
+          </div>
         </div>
 
         <%= partial "layouts/footer" %>

@@ -1,9 +1,11 @@
 //= require pages-framework/assets/plugins/pace/pace-theme-flash
 //= require pages-framework/assets/plugins/jquery-scrollbar/jquery.scrollbar
-@import "pages-framework/pages/css/pages-icons.css";
+//= require pages-framework/pages/css/pages-icons
 @import "pages-framework/pages/scss/color";
 @import "pages-framework/pages/scss/var";
+
 $base-img-url: "../images";
+$color-master: rgba(0,0,0,0.2);
 @import "pages-framework/pages/scss/mixins";
 @import "pages-framework/pages/scss/modules";
 @import "pages-framework/pages/scss/responsive";
