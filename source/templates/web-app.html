@@ -1,3 +1,11 @@
 <web-app>
-  <h1>Welcome to the Proxifier app!</h1>
+  <h1>Welcome to the <span>{title}</span> app!</h1>
+
+  <script type='text/coffee'>
+    @title = "Proxifier"
+  </script>
+
+  <style type='text/scss' scoped>
+    h1 { span { color: blue; } }
+  </style>
 </web-app>
