@@ -2,10 +2,10 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-ignore "pages-framework/*"
-ignore "bower_components/*"
+ignore "vendor/*"
 
 activate :sprockets
+sprockets.append_path File.join("#{root}", "node_modules")
 
 configure :development do
   activate :livereload

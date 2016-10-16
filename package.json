@@ -1,0 +1,23 @@
+{
+  "name": "proxifier",
+  "version": "1.0.0",
+  "description": "Proxifier client for managing your proxies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhgupta/proxifier-client.git"
+  },
+  "author": "Nikhil Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikhgupta/proxifier-client/issues"
+  },
+  "homepage": "https://github.com/nikhgupta/proxifier-client#readme",
+  "dependencies": {
+    "browser-request": "^0.3.3",
+    "exim": "^0.9.9"
+  }
+}

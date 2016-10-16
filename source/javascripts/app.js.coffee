@@ -4,3 +4,4 @@
 #= require vendor/pages-framework/assets/plugins/jquery-scrollbar/jquery.scrollbar
 #= require vendor/pages-framework/pages/js/pages
 #= require pages-search
+#= require bundle
