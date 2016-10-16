@@ -3,6 +3,8 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 ignore "pages-framework/*"
+ignore "bower_components/*"
+
 activate :sprockets
 
 configure :development do
