@@ -5,7 +5,7 @@ page '/*.txt', layout: false
 ignore "vendor/*"
 
 activate :sprockets
-sprockets.append_path File.join("#{root}", "node_modules")
+sprockets.append_path File.join("#{root}", "bower_components")
 
 configure :development do
   activate :livereload

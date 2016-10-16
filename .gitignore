@@ -4,12 +4,17 @@
 # or operating system, you probably want to add a global ignore instead:
 # git config --global core.excludesfile ~/.gitignore_global
 
-# Ignore bundler config and node modules
+# Ignore bundler config, bower components and node modules
 /.bundle
 /node_modules
+/bower_components
 
-# Ignore the build directory
+# Ignore build directory and other copied files
 /build
+/source/fonts
+/source/icons
+/source/images/*
+!/source/images/middleman-logo.svg
 
 # Ignore cache
 /.sass-cache

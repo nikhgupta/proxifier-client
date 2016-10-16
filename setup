@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+[[ -f "bower.json" ]] || bower init
+bower install --save jquery bootstrap riot exim browser-request
+mkdir -p source/icons source/fonts source/images source/stylesheets
+
+cp -rf bower_components/font-awesome/fonts/* source/fonts
+cp -rf source/vendor/pages-framework/pages/fonts/* source/fonts
+cp -rf source/vendor/pages-framework/pages/ico/* source/icons
+cp -rf source/vendor/pages-framework/pages/img/* source/images
+cp -rf source/vendor/pages-framework/assets/img/* source/images

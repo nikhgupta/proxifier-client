@@ -1,0 +1,22 @@
+{
+  "name": "proxifier",
+  "homepage": "https://github.com/nikhgupta/proxifier-client",
+  "description": "Proxifier client for managing your proxies",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "browser-request": "^0.2.1",
+    "exim": "^0.9.9",
+    "riot": "^2.6.4",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "font-awesome": "^4.6.3"
+  }
+}
