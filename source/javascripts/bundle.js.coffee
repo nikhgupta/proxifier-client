@@ -2,5 +2,4 @@
 #= require browser-request/dist/browser/request
 #= require riot/riot
 
-console.log "whateverasfuck"
-debugger
+console.log "welcome to Proxifier app!"
