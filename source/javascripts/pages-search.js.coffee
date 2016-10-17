@@ -1,6 +1,6 @@
 $(document).ready ->
   # Initializes search overlay plugin.
-  # Replace onSearchSubmit() and onKeyEnter() with 
+  # Replace onSearchSubmit() and onKeyEnter() with
   # your logic to perform a search and display results
   $('.list-view-wrapper').scrollbar()
   $('[data-pages="search"]').search
@@ -17,7 +17,7 @@ $(document).ready ->
 
       ###
           Do AJAX call here to get search results
-          and update DOM and use the following block 
+          and update DOM and use the following block
           'searchResults.find('.result-name').each(function() {...}'
           inside the AJAX callback to update the DOM
       ###

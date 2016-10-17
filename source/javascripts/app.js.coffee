@@ -8,3 +8,5 @@
 #= require pages-search
 #
 #= require bundle
+
+riot.mount('*')

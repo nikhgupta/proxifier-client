@@ -1,8 +1,36 @@
 <web-app>
-  <h1>Welcome to the <span>{title}</span> app!</h1>
+  <h1 onClick={refreshProxies}>Welcome to the <span>{title}</span> app!</h1>
+  <div if={state.error} class="alert alert-danger" role="alert">
+    <button class="close" data-dismiss="alert"></button>
+    <strong>Error: </strong>{ state.error }
+  </div>
+  <ul if={!state.error} each={proxy in state.proxies}>
+    <li>{proxy.ip}:{proxy.port}</li>
+  </ul>
 
   <script type='text/coffee'>
     @title = "Proxifier"
+    @state = null
+
+    @on 'before-mount', ->
+      ProxyStore.getState()
+
+    @on 'mount', ->
+      ProxyStore.listen @fetch
+      @refreshProxies()
+
+    @on 'update', ->
+      console.log @state
+
+    @on 'unmount', ->
+      ProxyStore.unlisten @fetch
+
+    @fetch = (state) =>
+      @update state: state
+
+    @refreshProxies = ->
+      ProxyActions.fetchProxies()
+
   </script>
 
   <style type='text/scss' scoped>
